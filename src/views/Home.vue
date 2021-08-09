@@ -1,18 +1,35 @@
 <template>
+
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <navbar />
+    <b-row class="mt-5 mb-5">
+      <b-col cols="3">
+        <cards />
+      </b-col>
+      <b-col cols="3">
+        <cards />
+      </b-col>
+      <b-col cols="3">
+        <cards />
+      </b-col>
+      <b-col cols="3">
+        <cards />
+      </b-col>
+    </b-row>
+    <tables />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
+import navbar from "../components/nav-bar.vue";
+import cards from "../components/Cards.vue";
+import tables from "@/components/Table.vue";
 export default {
   name: "Home",
   components: {
-    HelloWorld,
+    navbar,
+    cards,
+    tables,
   },
 };
 </script>

@@ -1,5 +1,13 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <AddNewUser />
   </div>
 </template>
+<script>
+import AddNewUser from "../components/AddNewUser.vue";
+export default {
+  components: {
+    AddNewUser,
+  },
+};
+</script>
